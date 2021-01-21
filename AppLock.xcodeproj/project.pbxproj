@@ -11,6 +11,8 @@
 		A81C0AF225B867660004D98D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C0AF125B867660004D98D /* ContentView.swift */; };
 		A81C0AF425B867680004D98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81C0AF325B867680004D98D /* Assets.xcassets */; };
 		A81C0AF725B867680004D98D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81C0AF625B867680004D98D /* Preview Assets.xcassets */; };
+		A81C0B0125B867850004D98D /* AppLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C0AFF25B867850004D98D /* AppLockView.swift */; };
+		A81C0B0225B867850004D98D /* AppLockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C0B0025B867850004D98D /* AppLockViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A81C0AF325B867680004D98D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81C0AF625B867680004D98D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A81C0AF825B867680004D98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81C0AFF25B867850004D98D /* AppLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLockView.swift; sourceTree = "<group>"; };
+		A81C0B0025B867850004D98D /* AppLockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLockViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		A81C0AEE25B867660004D98D /* AppLock */ = {
 			isa = PBXGroup;
 			children = (
+				A81C0AFF25B867850004D98D /* AppLockView.swift */,
+				A81C0B0025B867850004D98D /* AppLockViewModel.swift */,
 				A81C0AEF25B867660004D98D /* AppLockApp.swift */,
 				A81C0AF125B867660004D98D /* ContentView.swift */,
 				A81C0AF325B867680004D98D /* Assets.xcassets */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81C0AF225B867660004D98D /* ContentView.swift in Sources */,
+				A81C0B0125B867850004D98D /* AppLockView.swift in Sources */,
 				A81C0AF025B867660004D98D /* AppLockApp.swift in Sources */,
+				A81C0B0225B867850004D98D /* AppLockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var appLockVM: AppLockViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            if !appLockVM.isAppLockEnabled || appLockVM.isAppUnLocked {
+                AppHomeView()
+            } else {
+                AppLockView()
+            }
+        }
+        .onAppear {
+            if appLockVM.isAppLockEnabled {
+                appLockVM.appLockValidation()
+            }
+        }
     }
 }
 

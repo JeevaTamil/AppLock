@@ -46,5 +46,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSFaceIDUsageDescription</key>
+    <string>$(PRODUCT_NAME) need Touch Id or Face ID permission for app lock</string>
 </dict>
 </plist>
