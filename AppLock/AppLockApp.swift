@@ -9,11 +9,9 @@ import SwiftUI
 
 @main
 struct AppLockApp: App {
-    
     @StateObject var appLockVM = AppLockViewModel()
     @Environment(\.scenePhase) var scenePhase
     
-    @State var isAppActive: Bool = false
     @State var blurRadius: CGFloat = 0
     
     var body: some Scene {
