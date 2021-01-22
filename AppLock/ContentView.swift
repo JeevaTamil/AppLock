@@ -12,6 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            // Show HomeView app lock is not enabled or app is in unlocked state
             if !appLockVM.isAppLockEnabled || appLockVM.isAppUnLocked {
                 AppHomeView()
             } else {
@@ -19,6 +20,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
+            // if 'isAppLockEnabled' value true, then immediately do the app lock validation
             if appLockVM.isAppLockEnabled {
                 appLockVM.appLockValidation()
             }
